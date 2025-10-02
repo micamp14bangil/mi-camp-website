@@ -1,0 +1,21 @@
+
+/* Simple responsive style */
+body { font-family: Arial, sans-serif; margin:0; color:#222; }
+.site-header { display:flex; justify-content:space-between; align-items:center; padding:12px 20px; background:#0b5ed7; color:white; }
+.logo { font-weight:700; font-size:1.2rem; }
+.main-nav a { color:white; margin-left:12px; text-decoration:none; font-weight:600; }
+.hero { text-align:center; padding:60px 20px; background:linear-gradient(180deg,#e6f0ff,#fff); }
+.btn { display:inline-block; background:#0b5ed7; color:white; padding:10px 18px; border-radius:6px; text-decoration:none; margin-top:12px; }
+.highlight { padding:40px 20px; text-align:center; }
+.cards { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; }
+.card { width:300px; background:#f7f7f7; padding:12px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.08); }
+.card img { width:100%; border-radius:6px; }
+.content { padding:30px 18px; max-width:900px; margin:0 auto; }
+.schedule { width:100%; border-collapse:collapse; margin-bottom:16px; }
+.schedule th, .schedule td { border:1px solid #ddd; padding:8px; text-align:left; }
+.gallery-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:10px; }
+.site-footer { background:#222; color:#ddd; text-align:center; padding:18px; margin-top:30px; }
+@media (max-width:600px) {
+  .cards { flex-direction:column; align-items:center; }
+  .main-nav { display:none; }
+}
